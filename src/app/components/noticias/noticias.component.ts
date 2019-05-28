@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Article } from 'src/app/interfaces/interfaces';
+import { Article } from '../../interfaces/interfaces';
 
 @Component({
   selector: 'app-noticias',
@@ -9,6 +9,7 @@ import { Article } from 'src/app/interfaces/interfaces';
 export class NoticiasComponent implements OnInit {
 
 @Input() noticias: Article[]=[];
+@Input() enFavoritos = false;
 
   constructor() { }
 
